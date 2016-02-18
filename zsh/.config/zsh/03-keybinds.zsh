@@ -1,5 +1,5 @@
 # Lets kick this shit into vi mode
-bindkey -v
+# bindkey -v
 export KEYTIMEOUT=1
 
 # backspace and ^h working even after

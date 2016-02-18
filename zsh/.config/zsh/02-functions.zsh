@@ -7,15 +7,14 @@ precmd() {
 }
 
 function zle-line-init {
-	zle autosuggest-start
 	vcs_info
 	setprompt
-    zle reset-prompt
+	zle .reset-prompt
 }
 
 function zle-keymap-select {
 	setprompt
-    zle reset-prompt
+	zle .reset-prompt
 }
 zle -N zle-line-init
 zle -N zle-keymap-select

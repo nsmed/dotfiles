@@ -1,4 +1,4 @@
-export EDITOR=vim
+export EDITOR=nano
 export PAGER=less
 export BROWSER=firefox
 #export MOZ_USE_OMTC=1
@@ -9,7 +9,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 
-export PATH="${PATH}:/home/delusional/.localbin"
+export PATH="${PATH}:/home/nikolaj/.localbin"
 export M2_HOME="/opt/maven"
 
 export BSPWM_TREE="$XDG_DATA_HOME/bspwm.tree"

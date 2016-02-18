@@ -1,4 +1,4 @@
-#include "/home/delusional/.config/xcolors/active"
+#include "/home/nikolaj/.config/xcolors/active"
 
 !Font
 urxvt*font: xft:Terminus:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12
