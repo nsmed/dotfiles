@@ -40,6 +40,8 @@ for r in $HOME/.config/zsh/*.zsh; do
   source $r
 done
 
+alias penis="echo penis"
+
 eval $( dircolors -b $XDG_CONFIG_HOME/zsh/LS_COLORS/LS_COLORS )
 export LS_COLORS
 
