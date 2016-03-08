@@ -4,34 +4,34 @@ for i in $2 ; do
 	tagstr=""
 	case ${i:0:1} in
 		'F')
-			tagfgcol="\$color[green]"
-			tagstr=" - "
+			tagfgcol="\$color[grey]"
+			tagstr=" %{T\$font[icon]}+ "
 			;;
 		'f')
 			tagfgcol="\$color[grey]"
-			tagstr=" - "
+			tagstr=" %{T\$font[icon]}- "
 			;;
 		'o')
-			tagfgcol="\$color[grey]"
-			tagstr=" + "
+			tagfgcol="\$color[yellow]"
+			tagstr=" %{T\$font[icon]}- "
 			;;
 		'O')
-			tagfgcol="\$color[green]"
-			tagstr=" + "
+			tagfgcol="\$color[yellow]"
+			tagstr=" %{T\$font[icon]}+ "
 			;;
 		'M' | 'W' | 'm')
-			echo -n "%{F\$color[red]}["
+			echo -n "%{F\$color[red]} ["
 			;;
 		'L')
-			echo -n "%{F\$color[red]}]"
+			echo -n "%{F\$color[red]} ]"
 			;;
 		*)
 			continue
 			;;
 	esac
 	if [[ ! -z $tagstr ]] ; then
-		echo -n "%{F$tagfgcol}"
+		echo -en "%{F$tagfgcol}"
 		# clickable tags
-		echo -n "$tagstr" #${i:1} to get the text
+		echo -en "$tagstr" #${i:1} to get the text
 	fi
 done
