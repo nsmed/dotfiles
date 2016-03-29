@@ -1,8 +1,9 @@
 battery_status=$2
 battery_percentage=$3
+battery_thing=$4
 
 echo -n "%{T\$font[icon]}"
-if [ "$battery_status" == "Charging" ] || [ "$battery_status" == "Full" ]; then
+if [ "$battery_status" == "Charging" ] || [ "$battery_thing" == "discharging" ]; then
 	echo -en "%{F\$color[green]}\uE239"
 elif [[ $battery_percentage > 50 ]]; then
 	echo -en "%{F\$color[green]}\uE238"
