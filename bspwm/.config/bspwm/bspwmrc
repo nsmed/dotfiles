@@ -35,6 +35,8 @@ fi
 # wallpaper
 wallpaper apply
 
+i3lock-wrapper -e &
+
 # hotkeys
 sxhkd &
 
