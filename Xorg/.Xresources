@@ -11,7 +11,7 @@ urxvt*iconFile: /usr/share/icons/Moka/48x48/apps/terminal.png
 *scrollstyle: plain
 urxvt*scrollBar: false
 Xft.dpi: 96.0
-Xcursor.theme: OpenZone_Ice_Slim
+Xcursor.theme: OpenZone_White_Slim
 Xcursor.there_core: true
 Xcursor.size: 0
 URxvt*geometry: 140x40
